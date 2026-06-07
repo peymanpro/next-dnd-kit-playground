@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎯 next-dnd-kit-playground
+A complete and professional project showcasing Drag and Drop capabilities using @dnd-kit/core in Next.js 15.
 
-## Getting Started
+ Features
+Sortable List – Drag and reorder items in a vertical list
 
-First, run the development server:
+Kanban Board – Move tasks between columns + reorder within each column
 
-```bash
+ File Upload – Drag-and-drop zone for image uploads with validation
+
+Touch Support – Fully responsive and compatible with mobile and tablets
+
+Auto-Save – All data is persisted to localStorage
+
+TypeScript – Full type definitions for better development
+
+Smooth Animations – Great UX with DragOverlay
+
+Technologies
+Next.js 15 (App Router)
+
+React 19
+
+@dnd-kit/core v6
+
+@dnd-kit/sortable
+
+TypeScript
+
+TailwindCSS
+
+Installation & Running
+bash
+git clone https://github.com/YOUR_USERNAME/next-dnd-kit-playground.git
+cd next-dnd-kit-playground
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ Project Structure
+text
+next-dnd-kit-playground/
+├── app/                 # Main page and layout
+├── components/          # React components
+│   ├── ui/             # Base UI components
+│   ├── SortableList.tsx
+│   ├── KanbanBoard.tsx
+│   └── FileUploadZone.tsx
+├── hooks/              # Custom hooks
+├── types/              # TypeScript types
+├── constants/          # Initial data
+└── utils/              # Helper functions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Key @dnd-kit Concepts
+DndContext – The main provider for drag-and-drop functionality
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+useSortable – For sortable items
 
-## Learn More
+useDroppable – For drop zones
 
-To learn more about Next.js, take a look at the following resources:
+SortableContext – Manages sortable items
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+DragOverlay – Displays a preview while dragging
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
